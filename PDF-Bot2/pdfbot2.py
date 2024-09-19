@@ -70,7 +70,7 @@ Questions: {input}
 )
 
 # Allow the user to upload PDF files
-st.write("Start with generating your own API key on  https://build.nvidia.com/meta/llama3-70b and hit "get API key", use this key in the code. Then, upload desired PDF files and then hit 'Documents Embedding', finally, ask away your questions!")
+st.write("Start with generating your own API key on https://build.nvidia.com/meta/llama3-70b and hit 'get API key', use this key in the code. Then, upload desired PDF files and then hit 'Documents Embedding', finally, ask away your questions!")
 uploaded_files = st.file_uploader("Upload PDF Files", type="pdf", accept_multiple_files=True)
 
 if st.button("Documents Embedding"):
