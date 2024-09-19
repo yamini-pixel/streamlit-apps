@@ -1,2 +1,2 @@
 # streamlit-apps
-deployed stream apps
+repo for deployed streamlit apps
