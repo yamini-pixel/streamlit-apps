@@ -21,7 +21,7 @@ import time
 # os.environ['USER_AGENT'] = 'myagent'
 st.cache_data.clear()
 # Load the Groq API key
-os.environ['NVIDIA_API_KEY'] = "enter your api key here"
+os.environ['NVIDIA_API_KEY'] = "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"
 # os.environ['USER_AGENT'] = "PDFBot/2.0"
 
 # headers = {
@@ -55,7 +55,7 @@ def vector_embedding(uploaded_files):
         st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)  # vector embeddings
 
 
-st.title("Nvidia NIM Demo")
+st.title("PDF Bot with Nvidia NIM and FAISS")
 llm = ChatNVIDIA(model="meta/llama3-70b-instruct")
 
 prompt = ChatPromptTemplate.from_template(
@@ -70,7 +70,7 @@ Questions: {input}
 )
 
 # Allow the user to upload PDF files
-st.write("upload desired PDF files and then hit 'Documents Embedding'. Then go ahead and ask away your questions!")
+st.write("Start with generating your own API key on https://build.nvidia.com/meta/llama3-70b and hit 'get API key', use this key in the code. Then, upload desired PDF files and then hit 'Documents Embedding', finally, ask away your questions!")
 uploaded_files = st.file_uploader("Upload PDF Files", type="pdf", accept_multiple_files=True)
 
 if st.button("Documents Embedding"):
