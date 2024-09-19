@@ -21,7 +21,7 @@ import time
 # os.environ['USER_AGENT'] = 'myagent'
 st.cache_data.clear()
 # Load the Groq API key
-os.environ['NVIDIA_API_KEY'] = "enter your api key here"
+os.environ['NVIDIA_API_KEY'] = "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"
 # os.environ['USER_AGENT'] = "PDFBot/2.0"
 
 # headers = {
